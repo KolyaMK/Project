@@ -1,0 +1,276 @@
+body {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  padding: 0;
+  margin: 0;
+  min-width: 300px;
+  overflow-x: hidden;
+}
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif "Ubuntu", sans-serif;
+  font-weight: 900;
+}
+
+.p {
+  line-height: 1.65em;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.header {
+  background: rgb(77, 189, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 189, 253, 1) 35%,
+    rgba(56, 144, 218, 1) 100%
+  );
+  padding-top: 60px;
+  padding-bottom: 145px;
+}
+
+.offer {
+  font-family: "Ubuntu", sans-serif;
+  width: 510px;
+  font-size: 37px;
+  color: white;
+}
+
+.offer h1 {
+  font-size: 37px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offer span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 59px;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif;
+  background: #ffd429;
+  color: black;
+  display: block;
+  width: 250px;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+.intro {
+  margin-top: 30px;
+  font-size: 16px;
+  width: 380px;
+  color: white;
+}
+
+.desktop {
+  margin-top: 60px;
+}
+
+.learn {
+  padding-top: 110px;
+  padding-bottom: 125px;
+}
+
+.section-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  width: 310px;
+  text-align: center;
+  background: url("https://cdn1.savepice.ru/uploads/2020/5/25/0cac1bb93685edc07aef844d3d861cb5-full.png")
+    no-repeat;
+  background-position: center;
+}
+
+.time-title {
+  font-size: 18px;
+  margin-top: 200px;
+}
+
+.time-text {
+  margin-top: 7px;
+}
+
+.main {
+  padding-top: 110px;
+  background: #ecf3f8;
+  padding-bottom: 170px;
+}
+
+.time-travels {
+  background: url("https://cdn1.savepice.ru/uploads/2020/5/25/8e26354aaf702b1f94f563c89ce13360-full.png")
+    no-repeat;
+  background-position: center;
+  width: 300px;
+}
+
+.time-value {
+  background: url("https://cdn1.savepice.ru/uploads/2020/5/25/cf96a2c8b9d38fcdd4da779dd6806779-full.png")
+    no-repeat;
+  background-position: center;
+}
+
+.input {
+  width: 350px;
+  border: 1px solid #bfb8d1;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  height: 54px;
+  padding-left: 38px;
+  margin: 15px;
+}
+
+.form {
+  width: 400px;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  padding: 33px 0;
+  background: #164d7a;
+  text-align: center;
+  color: white;
+}
+
+.btn-form {
+  width: 350px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+/*responsive */
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+}
+
+/*768px-992px */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+
+  .container a:first-child {
+    position: relative;
+    left: calc(50% - 44px);
+  }
+
+  .desktop {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .btn {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .times {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .wrapper a:last-child {
+    margin-top: 40px;
+  }
+
+  .wrapper a:last-child img {
+    max-width: 75%;
+  }
+
+  div.offer {
+    width: 80%;
+  }
+
+  h1.offer {
+    width: 100%;
+  }
+
+  .offer .intro {
+    width: 100%;
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .times {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .offer h1 span {
+    font-size: 40px;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .form input {
+    padding-left: 12px;
+  }
+
+  .form .btn {
+    margin-left: 15px;
+  }
+}
